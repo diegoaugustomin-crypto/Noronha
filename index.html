@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<title>Fluxo de Caixa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brandrow"><div class="brand" id="brand">Fluxo de Caixa</div>
+      <button class="navtoggle" id="navToggle" data-act="navToggle" aria-expanded="true" title="Recolher menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg><span class="sr">Recolher menu</span></button></div>
+    <div class="empresa" id="empresaNome"></div>
+    <nav class="nav" id="nav" aria-label="Menu principal"></nav>
+    <div class="userbox"><span id="userEmail"></span><button class="role" id="userRole" data-act="myAccess" title="Ver meu acesso"></button><span id="storeinfo"></span><button data-act="logout">Sair</button></div>
+  </aside>
+  <main class="main" id="main" aria-live="polite"></main>
+</div>
+<div id="auth" class="auth" hidden></div>
+<div id="drawer" class="drawer" hidden></div>
+<div id="toast" class="toast" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" defer></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js" defer></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js" defer></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js" defer></script>
+<script src="js/firebase-config.js" defer></script>
+<script src="js/01-util-store.js" defer></script>
+<script src="js/02-calculos.js" defer></script>
+<script src="js/03-importacao.js" defer></script>
+<script src="js/04-painel-importar.js" defer></script>
+<script src="js/05-contas.js" defer></script>
+<script src="js/06-fluxo.js" defer></script>
+<script src="js/07-cartoes.js" defer></script>
+<script src="js/08-config-boot.js" defer></script>
+<script src="js/09-auth.js" defer></script>
+<script src="js/10-acesso.js" defer></script>
+<script src="js/11-usuarios.js" defer></script>
+<script src="js/12-publicar.js" defer></script>
+<script src="js/99-start.js" defer></script>
+</body>
+</html>
